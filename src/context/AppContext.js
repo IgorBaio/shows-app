@@ -11,7 +11,7 @@ export const appReducer = (state,action)=>{
         case "addItem":
             const showList = state.showList;
             showList.push(action.payload);
-            return {...state,showList}   
+            return {...state,showList}
         default:
             return state;
     }

@@ -14,13 +14,13 @@ const ShowDetail = ()=>{
         <>
         <View style={styles.parentStyle}>
             <View style={styles.viewStyle}>
-            <Text>Nome:{name}</Text>
-            <Text>Country:{country}</Text>
-            <Text>Network:{network}</Text>
+            <Text>Nome: {name}</Text>
+            <Text>Country: {country}</Text>
+            <Text>Network: {network}</Text>
             <Image
-            style={styles.pictureStyle}
-            resizeMode={"contain"}
-            source={image_thumbnail_path?{uri:image_thumbnail_path}:null}
+                style={styles.pictureStyle}
+                resizeMode={"contain"}
+                source={image_thumbnail_path?{uri:image_thumbnail_path}:null}
             />
             </View>
         </View>
@@ -40,7 +40,7 @@ const styles=StyleSheet.create({
   },
   pictureStyle:{
       height:200,
-      width:300
+      width:250
   }
 })
 export default ShowDetail;
